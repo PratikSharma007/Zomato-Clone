@@ -43,7 +43,8 @@
 
 .hero-content img {
     width: 100%;
-    max-width: 300px;
+
+    max-width: clamp(250px, 27vw, 300px);
 }
 
 .hero-content h3 {
