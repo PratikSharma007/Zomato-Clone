@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: poppins;
+    font-family: poppins, sans-serif ;
 }
 
 .container {
@@ -44,17 +44,17 @@
 .hero-content img {
     width: 100%;
 
-    max-width: clamp(250px, 27vw, 300px);
+    max-width: clamp(150px, 27vw, 300px);
 }
 
 .hero-content h3 {
-    font-size: clamp(25px, 5vw, 54px);
+    font-size: clamp(22px, 5vw, 54px);
     font-weight: 600;
     line-height: 1.2;
 }
 
 .hero-content p {
-    font-size: clamp(17px, 2vw, 24px);
+    font-size: clamp(9px, 2vw, 24px);
     font-weight: 400;
     width: 100%;
     max-width: 350px;
@@ -63,11 +63,24 @@
 .hero-buttons .Google {
     width: 100%;
     max-width: 190px;
+    display: block;
 }
 
 .hero-buttons .App {
     width: 100%;
     max-width: 175px;
+    display: block;
+}
+
+.hero-buttons button{
+        background-color: #e23744;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 5px 30px;
+    border: 0px solid #e5e7eb;
+    display: none;
 }
 
 .hero-buttons {
@@ -75,4 +88,182 @@
     gap: 15px;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.second-content {
+    background-image: url("assests/second-hero-section-bg.jpg");
+    width: 100%;
+    /* height: 100vh; */
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.second-items-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* height: 100vh; */
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 10px;
+}
+
+.second-upper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(30px, 6vw, 100px);
+    width: 100%;
+    max-width: 1000px;
+}
+
+.second-lower {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(18px, 3vw, 40px);
+    background-color: #ffffff;
+    border-radius: 26px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+    border-bottom-color: rgb(222, 226, 230);
+    padding: 14px 20px;
+    flex-wrap: wrap;
+}
+
+.left-burger img {
+    width: clamp(80px, 14vw, 200px);
+}
+
+.second-center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    gap: 16px;
+}
+
+.right-momo-pizza {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(30px, 7vw, 100px);
+
+}
+
+.right-momo-pizza img {
+    width: clamp(80px, 14vw, 200px);
+}
+
+.box {
+    display: flex;
+    align-items: center;
+}
+
+.box-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-imgage .home {
+    width: clamp(40px, 7vw, 64px)
+}
+
+.box-imgage .loca {
+    width: clamp(18px, 7vw, 32px)
+}
+
+.box-imgage .parcel {
+    width: clamp(37px, 7vw, 52px);
+}
+
+.second-center-content h2 {
+    color: #ef4f5f;
+    font-size: clamp(25px, 4vw, 48px);
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.second-center-content p {
+    color: #596378;
+    font-size: clamp(16px, 2vw, 20px);
+    font-weight: 300;
+}
+
+.box-text h4 {
+    color: #596378;
+    font-size: clamp(18px, 3vw, 30px);
+    font-weight: 700;
+}
+
+.box-text p {
+    color: #767c8f;
+    font-size: clamp(14px, 2vw, 18px);
+    font-weight: 400;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+@media (max-width:515px) {
+
+    .second-center-content h2 {
+        font-size: clamp(12px, 2vw, 16px);
+    }
+
+    .second-center-content p {
+        font-size: clamp(9px, 3vw, 12px);
+    }
+
+    .second-upper {
+        gap: 12px
+    }
+
+    .box-text h4 {
+        font-size: 12px;
+    }
+
+    .box-text p {
+        font-size: 9px
+    }
+
+    .box-text h4 {
+        font-size: 12px;
+    }
+
+    .box-text p {
+        font-size: 9px
+    }
+
+    .box-imgage .home {
+        width: 24px
+    }
+
+    .box-imgage .loca {
+        width: 12px
+    }
+
+    .box-imgage .parcel {
+        width: 20px
+    }
+
+    .hero-buttons .Google {
+        display: none;
+    }
+
+    .hero-buttons .App {
+        display: none;
+    }
+
+    .hero-buttons button{
+    display: block;
+}
 }
