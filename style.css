@@ -632,16 +632,27 @@
     font-weight: 400;
 }
 
+.GooglePlay:hover {
+    transform: scale(1.06);
+}
+
+.AppleStore:hover {
+    transform: scale(1.06);
+}
+
+
 .relative-Right-inner-img .GooglePlay {
     /* width: 180px; */
     width: 100%;
     max-width: 180px;
+    transition: transform .1s cubic-bezier(0, 0, .2, 1) 0.25ms;
 }
 
 .relative-Right-inner-img .AppleStore {
     /* width: 160px; */
     width: 100%;
-    max-width: 175px;
+    max-width: 165px;
+    transition: transform .1s cubic-bezier(0, 0, .2, 1) 0.25ms;
 }
 
 .relative-media-img img {
@@ -654,16 +665,16 @@
         display: block;
     }
 
-    .relative-right{
+    .relative-right {
         display: none;
     }
 
-    .relative-left{
+    .relative-left {
         align-items: center;
         text-align: center;
     }
 
-    .relative-Right-inner-img{
+    .relative-Right-inner-img {
         justify-content: center;
     }
 }
